@@ -1,6 +1,5 @@
 from ytmusicapi import YTMusic
 
-
 class Search:
     """
     Search engine for songnova
@@ -38,4 +37,3 @@ class Search:
                 del result[key]
             print(result)
         return results
-
