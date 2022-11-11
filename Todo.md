@@ -4,6 +4,7 @@
 	- Add more search methods
 	- Add option to fetch more results for the same query
 	- Add field `state: str = "idle" # ["playing", "paused"]` to search results
+	- Add search method for local database with priority 0
 	- Add documentation
 	- Add usage examples
 
@@ -11,7 +12,13 @@
 	- Add better documentation
 	- Add method `loop`
 	- Add method `prev`
+	
+- ### [playlists.py](./songnova_backend/playlists.py)
+	- Create methods `view_playlist`, `view_all`, `delete_playlist` and `edit_playlist`
+	- Create default tables `liked music`, `playlists` and `downloaded music`
+	- Create search function for the database with priority of results as 0
 
+---
 
 ## [Frontend](./songnova_frontend):
 
