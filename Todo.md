@@ -17,7 +17,20 @@
 	- Create methods `view_playlist`, `view_all`, `delete_playlist` and `edit_playlist`
 	- Create default tables `liked music`, `playlists` and `downloaded music`
 	- Create search function for the database with priority of results as 0
-
+	- Add following code to view_playlist
+```sqlite
+INSERT INTO {playlist_id} VALUES (
+{data["album"]["id"]},
+{data["album"]["name"]},
+{data["artists"][0]["id"]},
+{data["artists"][0]["name"]},
+{data["duration"]},
+{data["thumbnails"][1]["url"]},
+{data["title"]},
+{data["videoID"]},
+{data["year"]}
+)
+```
 ---
 
 ## [Frontend](./songnova_frontend):
